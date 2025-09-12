@@ -28,6 +28,7 @@ temperaturas = [
 def calcular_prom(temp_semanales):
     return sum(temp_semanales) / len(temp_semanales) #realizamos la operacion suma y con len contamos los dias en este caso 7
 
+
 # Mostrar las temperaturas diarias y los promedios
 for i, ciudad in enumerate(["Quito", "Guayaquil", "Cuenca"]):     #se obtiene los indices
     print(f"\nTemperaturas diarias para {ciudad}:")
