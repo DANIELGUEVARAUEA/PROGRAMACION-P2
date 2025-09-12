@@ -25,7 +25,7 @@ temperaturas = [
 
 # Función 1 para calcular promedio de una semana
 def calcular_prom(temp_semanales):
-    return sum(temp_semanales) / len(temp_semanales) #suma y divide,por el numero de datos para el promedio, len cuenta los datos
+    return sum(temp_semanales) / len(temp_semanales) # retorna la suma y divide,por el numero de datos para el promedio, len cuenta los datos
 
 # función 2 para mostrar temperaturas y promedios por ciudad
 def mostrar_temperaturas(ciudades, temperaturas, dias): #definimos la funcion
