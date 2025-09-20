@@ -13,9 +13,9 @@ total1 = monto1 - descuento1
 
 # Segundo caso: el usuario ingresa también el porcentaje
 monto2 = float(input("Ingrese el total de la segunda compra: "))
-porcentaje2 = float(input("Ingrese el porcentaje de descuento de su segunda compra: "))
+porcentaje2 = int(input("Ingrese el porcentaje de descuento de su segunda compra: "))
 
-descuento2 = procesa_descuento(monto2, porcentaje2)
+descuento2 = procesa_descuento(monto2,porcentaje2)
 total2 = monto2 - descuento2
 
 
