@@ -16,8 +16,8 @@ nuevo_valor = input(f"Ingrese el valor para '{nueva_clave}': ")
 informacion_personal[nueva_clave] = nuevo_valor
 
 
-# Verificacion si "telefono" existe, si no, agregarla
-if "telefono" not in informacion_personal:                   #se realiza un if para cambiar el numero
+# Verificacion si "telefono" existe, si no, se agrega
+if "telefono" not in informacion_personal:                  
     respuesta = input("La clave 'telefono' no existe. ¿Desea ingresarlo? (s/n): ").lower()
     if respuesta == "s":
         numero = input("Ingrese el número de teléfono: ")
