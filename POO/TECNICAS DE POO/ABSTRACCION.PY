@@ -1,6 +1,6 @@
-# ==============================
+
 #   CLASE ABSTRACCIÓN
-# ==============================
+
 
 class Factura:           #clase factura
     def __init__(self, numero):
@@ -27,30 +27,30 @@ class Factura:           #clase factura
         print("Subtotal:", self._subtotal())
 
 
-# ==============================
+
 #   HERENCIA + POLIMORFISMO
-# ==============================
+
 
 class FacturaConIVA(Factura):
-    def __init__(self, numero, iva=0.15):
+    def __init__(self, numero, iva=0.15):                   #calculo del iva
         super().__init__(numero)
         self.iva = iva
 
     def total(self):
         """Polimorfismo: cálculo propio"""
-        subtotal = self._subtotal()
+        subtotal = self._subtotal()                        
         return subtotal + subtotal * self.iva
 
 
 class FacturaExenta(Factura):
     def total(self):
-        """Polimorfismo: no tiene IVA"""
+        """Polimorfismo: no tiene IVA"""               #calculo del iva 0
         return self._subtotal()
 
 
-# ==============================
+
 #        USO DEL PROGRAMA
-# ==============================
+
 
 # Factura normal con IVA 15
 f1 = FacturaConIVA("A-0000-100")
