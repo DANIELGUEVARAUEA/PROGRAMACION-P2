@@ -7,7 +7,7 @@ class Reserva:
 
     def confirmar_reserva(self):
         # Verifica si la habitación está disponible
-        if self.habitacion.disponible:
+        if self.habitacion.disponible:                          #Condicion para disponibilidad
             self.habitacion.reservar()
             total = self.habitacion.precio * self.dias
             return (
