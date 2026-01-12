@@ -1,9 +1,5 @@
-"""
-Programa principal
-Descripción: Este archivo crea un objeto de la clase ConvertidorTemperatura
-y muestra los resultados de la conversión.
-"""
-#llamamos a unuestra clase 
+""
+#llamamos a nuestra clase 
 from convertidor import ConvertidorTemperatura
 
 def main():
