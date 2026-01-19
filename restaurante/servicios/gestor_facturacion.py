@@ -12,4 +12,4 @@ class GestorFacturacion:
         for factura in self.facturas:
             print(factura.mostrar_resumen())
             print(f"Total a pagar: ${factura.calcular_total():.2f}")
-            print("-" * 15)
+            print("-" * 40)

@@ -2,7 +2,7 @@ from modelos.factura_consumo import FacturaConsumo
 from servicios.gestor_facturacion import GestorFacturacion
 
 # Crear instancias de facturas
-factura1 = FacturaConsumo("Daniel Guevara", 45.00)
+factura1 = FacturaConsumo("Daniel Guevara", 25.00)
 factura2 = FacturaConsumo("Dayanna Porras", 68.76)
 
 # Crear gestor de facturación

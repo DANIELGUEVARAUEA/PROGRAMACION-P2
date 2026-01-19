@@ -8,7 +8,7 @@ class FacturaConsumo(Factura):
 
     # Polimorfismo: implementación específica del cálculo
     def calcular_total(self):
-        iva = self._subtotal * 0.12
+        iva = self._subtotal * 0.15
         servicio = self._subtotal * 0.10
         total = self._subtotal + iva + servicio
         return total
