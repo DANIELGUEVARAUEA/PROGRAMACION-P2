@@ -1,0 +1,7 @@
+[INIT] Repositorio de facturas iniciado.
+1 | 2026-01-25 22:03:51 | dg | $100.00
+2 | 2026-01-25 22:03:57 | ererer | $100.00
+[CLOSE] Archivo cerrado manualmente.
+[INIT] Repositorio de facturas iniciado.
+1 | 2026-01-25 22:04:38 | Daniel Guevara | $100.00
+2 | 2026-01-25 22:04:52 | Prueba10 | $100.00

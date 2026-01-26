@@ -4,18 +4,23 @@ import os
 class RepositorioFacturas:
     """
     Clase encargada de manejar el almacenamiento de facturas.
-    Demuestra el uso de __init__ y __del__ con un recurso real (archivo).
+    El archivo facturas_emitidas.txt se crea en la carpeta raíz del proyecto.
     """
 
-    def __init__(self, ruta_archivo: str = "facturacion/facturas_emitidas.txt"):
+    def __init__(self, nombre_archivo: str = "facturas_emitidas.txt"):
         # CONSTRUCTOR
-        # Se ejecuta al crear el objeto y abre el archivo
-        self.ruta_archivo = ruta_archivo
+        # Se ejecuta al crear el objeto
 
-        # Crea la carpeta 'facturacion' si no existe
-        os.makedirs(os.path.dirname(self.ruta_archivo), exist_ok=True)
+        # Obtiene la ruta del archivo actual (facturacion/)
+        ruta_actual = os.path.dirname(__file__)
 
-        # Abre el archivo dentro de la carpeta facturacion
+        # Sube un nivel para llegar a la carpeta raíz del proyecto
+        ruta_proyecto = os.path.abspath(os.path.join(ruta_actual, ".."))
+
+        # Ruta final del archivo en el proyecto principal
+        self.ruta_archivo = os.path.join(ruta_proyecto, nombre_archivo)
+
+        # Abre el archivo (recurso externo)
         self._archivo = open(self.ruta_archivo, "a", encoding="utf-8")
         self._abierto = True
 
